@@ -1,6 +1,6 @@
 # sap_aplication
 
-## Project setup
+## Project sapGithub
 ```
 npm install
 ```
