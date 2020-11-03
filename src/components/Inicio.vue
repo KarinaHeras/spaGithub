@@ -26,13 +26,12 @@ export default {
     name: 'Inicio',
     data(){
         return{
-            info: null, //nuestro modelo de datos
+            info: null, 
             nickname:'',
             searcherStatus: null,
 
         }
     },
-    //pasameos la url esperamos la respuesta y en la resderizamos con vfor
     mounted () {
       this.searcherStatus = this.$store.state.searcher
     axios
@@ -42,8 +41,7 @@ export default {
     },
     methods: {
     submit () {
-    //  console.log(this.nickname)
-  //  this.$router.push(`/single/${this.nickname}`) 
+   
   let nick = this.nickname
   let url = '/single/'+ nick + '/true'
       this.$router.push(url) 

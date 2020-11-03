@@ -20,15 +20,13 @@ export default {
     data(){
         return{
           info: {login:false},
-            profile: null, //nuestro modelo de datos
+            profile: null, 
             searcher: false,
         }
     },
-    //pasameos la url esperamos la respuesta y en la resderizamos con vfor
   mounted (){
-    this.profile = this.$route.params.id // para obtener el login
-    this.searcher = this.$route.params.searcher == 'true'//para obtener si vien del buscador o no 
-
+    this.profile = this.$route.params.id 
+    this.searcher = this.$route.params.searcher == 'true'
     axios
       .get(`https://api.github.com/users/${this.profile}`)
       .then(response => (this.info = response.data))
