@@ -13,10 +13,10 @@ describe('search for a user', () => {
 
       it('click in user detail show user detail but not increase success counter', () => {
         cy.visit('http://localhost:8080/');
-        cy.get('#listcard > div:nth-child(2) > div > a').click();
-        cy.get('h4').contains('mojombo');
-        cy.get('.btn').click();
-        cy.get('.success').contains('0');
+        cy.get('#listcard > div:nth-child(2) > div > a').click(); // esto es pinchar
+        cy.get('h4').contains('mojombo'); // esto es comprobar que tiene resultado
+        cy.get('.btn').click(); // ESTO ES VOLVER ATRAS
+        cy.get('.success').contains('0'); // ESTO ES COMPROBAR QUE HA CRECIDO EL CONTADOR
 
       });
 
