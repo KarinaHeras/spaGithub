@@ -17,14 +17,9 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# sap_aplication
 
-## Project setup para Cypress
-```
- npm install cypress
-```
-
-### The next step will be to open Cypress, executing the executable found in ./node_modules/.bin
+### to execute text 
+from root repository diretory
 ```
 ./node_modules/.bin/cypress open
 
