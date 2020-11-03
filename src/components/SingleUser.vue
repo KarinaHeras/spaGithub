@@ -162,7 +162,7 @@ h4{
     padding-top: 0;
 }
 .listcard{
-    padding-top: 8rem;
+    padding-top: 11rem;
 }
 }
 </style>
