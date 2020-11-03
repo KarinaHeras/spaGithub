@@ -6,14 +6,14 @@
 
 
 <script>
-import Inicio from './components/Inicio';
+import Home from './components/Home';
 import SingleUser from './components/SingleUser'
 
 export default {
    name: 'app',
   components: {
     SingleUser,
-    Inicio
+    Home
   },
   data: function(){
     return{

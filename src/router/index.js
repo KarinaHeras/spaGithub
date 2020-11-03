@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Inicio from '../components/Inicio.vue';
+import Home from '../components/Home.vue';
 import SingleUser from '../components/SingleUser.vue'
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Inicio
+    component: Home
   },
   {
     path: '/single/:id/:searcher',

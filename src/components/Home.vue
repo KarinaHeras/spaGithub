@@ -23,7 +23,7 @@
 import axios from 'axios'
 
 export default {
-    name: 'Inicio',
+    name: 'Home',
     data(){
         return{
             info: null, 
