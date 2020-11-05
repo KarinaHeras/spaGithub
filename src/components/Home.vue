@@ -50,6 +50,9 @@ export default {
     }
 }
 </script>
+
+
+
 <style lang="scss">
 html{
    overflow-y: scroll; 
