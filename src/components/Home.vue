@@ -133,10 +133,12 @@ height: 2rem;
 
 .error{
   padding-left: 1rem;
+    font-size: 1rem;
+
 }
 .success{
   padding-left: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 @media screen and (max-width: 480px) {
   .navbar {
