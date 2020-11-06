@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
 
-app.use(express.static('./dist/sapGithub'));
+app.use(express.static('dist/sapGithub'));
 
 app.get('/*', function(req, res) {
-  res.sendFile('index.html', {root: 'dist/sapGithub/'}
+  res.sendFile('index.html', {root: 'dist'}
 );
 });
 
