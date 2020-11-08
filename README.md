@@ -36,6 +36,6 @@ npm run build
 ### Customize configuration
 See [Configuration Reference](https://docs.cypress.io/guides/)
 
-### You can see my SAP from github in heroku here (https://sap-github.herokuapp.com)
+You can see my SAP from github in heroku here (https://sap-github.herokuapp.com)
 
 
