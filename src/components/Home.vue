@@ -11,7 +11,7 @@
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="submit">Search</button>
   </form>
 </nav>
-      <div class="card text-align card" v-for="infoDetail in info">
+      <div class="card text-align card" v-for="infoDetail in info" :key="infoDetail">
         <img class="img-fluid card-image" :src="infoDetail.avatar_url" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-text">{{ infoDetail.login }}</h4>
@@ -41,7 +41,6 @@ export default {
     },
     methods: {
     submit () {
-   
   let nick = this.nickname
   let url = '/single/'+ nick + '/true'
       this.$router.push(url) 
