@@ -7,7 +7,7 @@
   <span  class="error" v-if="searcherStatus"> Fails: {{ searcherStatus.fails }}</span>
       </a> 
   <form class="form-inline">
-    <input type="text" name="gh-username" placeholder="Search for a GitHub username......" v-model="nickname" v-on:keydown.13="submit">
+    <input type="text" name="gh-username" placeholder="Github username..." v-model="nickname" v-on:keydown.13="submit">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="submit">Search</button>
   </form>
 </nav>
