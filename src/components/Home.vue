@@ -142,7 +142,7 @@ height: 2rem;
 }
 @media screen and (max-width: 480px) {
   .navbar {
-    height: 11.7rem;
+    height: 11.7rem !important;
 }
   .card-image {
   width: 100% !important;
