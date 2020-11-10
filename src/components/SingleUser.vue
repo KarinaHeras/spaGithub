@@ -7,13 +7,12 @@
           <h4   v-if="info.login" class="card-text">{{ info.login }}</h4>
           <p   v-if="info.followers" class="card-text-p">{{ info.followers }} <span>Follower</span></p>
           <p   v-if="info.following" class="card-text-p">{{ info.following }} <span> Following</span></p>
-          <router-link class="btn":to="{path: '/'}">Back</router-link>
+          <router-link class="btn" :to="{path: '/'}">Back</router-link>
 </div>
         </div>
     </div>
 </div>
 </template>
-
 
 <script>
 import axios from 'axios'

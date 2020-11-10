@@ -1,7 +1,6 @@
 <template>
  
     <router-view/>
-  </div>
 </template>
 
 
@@ -15,10 +14,8 @@ export default {
     SingleUser,
     Home
   },
-  data: function(){
-    return{
-      username:''
-    }
+  data(){
+    
 
   }
 

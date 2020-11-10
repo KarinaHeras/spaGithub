@@ -1,17 +1,17 @@
 <template>
   <div class="row  listcard" id="listcard">
   <nav class="navbar navbar-expand-md justify-content-between navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" routerLink="/"
+    <router-link class="navbar-brand" to="/"
       >Usuarios GitHub<span class="text-orange">APP</span>
       <span class="success" v-if="searcherStatus"> Success: {{ searcherStatus.success }}</span> 
   <span  class="error" v-if="searcherStatus"> Fails: {{ searcherStatus.fails }}</span>
-      </a> 
+      </router-link> 
   <form class="form-inline">
     <input type="text" name="gh-username" placeholder="Github username..." v-model="nickname" v-on:keydown.13="submit">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="submit">Search</button>
   </form>
 </nav>
-      <div class="card text-align card" v-for="infoDetail in info" :key="infoDetail">
+      <div class="card text-align card" v-for="infoDetail in info">
         <img class="img-fluid card-image" :src="infoDetail.avatar_url" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-text">{{ infoDetail.login }}</h4>
